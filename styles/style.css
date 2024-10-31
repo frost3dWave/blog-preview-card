@@ -1,2 +1,92 @@
+:root{
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-500: hsl(0, 0%, 42%);
+    --clr-grey-950: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--clr-yellow);
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.wrapper{
+    background-color: var(--clr-white);
+    margin-inline: auto;
+    max-width: 24rem;
+    border: 1px solid var(--clr-grey-950);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+.wrapper > img{
+    border-radius: 0.625rem;
+}
+
+.text-container{
+    border: 1px solid black;
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    gap: 12px;
+}
+
+.text-container p{
+    font-size: 0.75rem;
+    margin: 0;
+    color: var(--clr-grey-950);
+}
+
+.text-container h2{
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0;
+    color: var(--clr-grey-950);
+}
+
+.text-container p:first-child{
+    background-color: var(--clr-yellow);
+    font-weight: 800;
+    padding-inline: 12px;
+    padding-block: 4px;
+    border-radius: 0.25rem;
+}
+
+.text-container p:last-child{
+    font-size: 0.875rem;
+    color: var(--clr-grey-500);
+}
+
+.profile{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.profile img{
+    max-width: 2rem;
+}
+
+.profile p{
+    font-size: 0.875rem;
+    font-weight: 800;
+    margin: 0;
+}
+
 .attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
